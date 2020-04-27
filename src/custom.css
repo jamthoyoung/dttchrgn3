@@ -1,0 +1,45 @@
+@-moz-document url-prefix() {
+    select.form-control {
+        padding-right: 25px;
+        background-image: url("data:image/svg+xml,\
+          <svg version='1.1' xmlns='http://www.w3.org/2000/svg'\
+               width='14px' height='14px' viewBox='0 0 1200 1000' fill='rgb(51,51,51)'>\
+            <path d='M1100 411l-198 -199l-353 353l-353 -353l-197 199l551 551z'/>\
+          </svg>");
+        background-repeat: no-repeat;
+        background-position: calc(100% - 7px) 50%;
+        -moz-appearance: none;
+        appearance: none;
+    }
+}
+.col-centered-xs-12{
+    text-align: center;
+}
+
+.col-right-xs-12{
+    text-align: right;
+}
+
+@media(max-width: 1200px) {
+  h1 {
+    font-weight: bold;
+    font-size: 24pt;
+  }
+}
+@media(max-width: 992px) {
+  h1 {
+    font-weight: bold;
+    font-size: 18pt;
+  }
+}
+@media(max-width: 768px) {
+  h1 {
+    font-weight: bold;
+    font-size: 12pt;
+  }
+}
+@media(max-width: 5000px) {
+  h1 {
+    font-weight: bold;
+  }
+}
