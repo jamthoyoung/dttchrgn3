@@ -168,7 +168,7 @@ class PrintScreen extends React.Component {
     return (
       <div>
           <Button id="printButton" onClick={() => {this.doPDF()}}>Generate Character Sheet</Button>
-          <Modal show={this.state.showModal} bsSize="large" aria-labelledby="contained-modal-title-lg">
+          <Modal show={this.state.showModal} size="large" aria-labelledby="contained-modal-title-lg">
             <Modal.Header closeButton>
               <Modal.Title id="contained-modal-title-lg">Errors</Modal.Title>
             </Modal.Header>
@@ -176,7 +176,7 @@ class PrintScreen extends React.Component {
               <ListGroup>
                 {
                   this.props.errors.map(function(value,index){
-                    return <ListGroupItem bsStyle="danger">{value}</ListGroupItem>
+                    return <ListGroupItem variant="danger">{value}</ListGroupItem>
                   })
                 }
               </ListGroup>
